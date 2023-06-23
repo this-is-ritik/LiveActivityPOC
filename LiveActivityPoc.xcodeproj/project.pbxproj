@@ -18,6 +18,13 @@
 		F8AADE672A4641C9005543C9 /* LiveActivityPocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE662A4641C9005543C9 /* LiveActivityPocUITests.swift */; };
 		F8AADE692A4641C9005543C9 /* LiveActivityPocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE682A4641C9005543C9 /* LiveActivityPocUITestsLaunchTests.swift */; };
 		F8AADE782A46436A005543C9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F8AADE772A46436A005543C9 /* .gitignore */; };
+		F8AADE7D2A4647A7005543C9 /* AlarmCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE7B2A4647A7005543C9 /* AlarmCVC.swift */; };
+		F8AADE7E2A4647A7005543C9 /* AlarmCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8AADE7C2A4647A7005543C9 /* AlarmCVC.xib */; };
+		F8AADE812A464A9C005543C9 /* HomeCollectionViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE802A464A9C005543C9 /* HomeCollectionViewDataModel.swift */; };
+		F8AADE842A464DC0005543C9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE832A464DC0005543C9 /* UIColor+Extension.swift */; };
+		F8AADE862A464E12005543C9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE852A464E12005543C9 /* UIView+Extension.swift */; };
+		F8AADE882A465058005543C9 /* HomeBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE872A465058005543C9 /* HomeBaseViewModel.swift */; };
+		F8AADE8B2A465210005543C9 /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AADE8A2A465210005543C9 /* HomeViewProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		F8AADE662A4641C9005543C9 /* LiveActivityPocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityPocUITests.swift; sourceTree = "<group>"; };
 		F8AADE682A4641C9005543C9 /* LiveActivityPocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityPocUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F8AADE772A46436A005543C9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F8AADE7B2A4647A7005543C9 /* AlarmCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCVC.swift; sourceTree = "<group>"; };
+		F8AADE7C2A4647A7005543C9 /* AlarmCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmCVC.xib; sourceTree = "<group>"; };
+		F8AADE802A464A9C005543C9 /* HomeCollectionViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewDataModel.swift; sourceTree = "<group>"; };
+		F8AADE832A464DC0005543C9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F8AADE852A464E12005543C9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F8AADE872A465058005543C9 /* HomeBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseViewModel.swift; sourceTree = "<group>"; };
+		F8AADE8A2A465210005543C9 /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +118,8 @@
 		F8AADE412A4641C8005543C9 /* LiveActivityPoc */ = {
 			isa = PBXGroup;
 			children = (
+				F8AADE822A464DA4005543C9 /* Utilities */,
+				F8AADE792A4646C3005543C9 /* Home */,
 				F8AADE422A4641C8005543C9 /* AppDelegate.swift */,
 				F8AADE442A4641C8005543C9 /* SceneDelegate.swift */,
 				F8AADE462A4641C8005543C9 /* ViewController.swift */,
@@ -131,6 +147,51 @@
 				F8AADE682A4641C9005543C9 /* LiveActivityPocUITestsLaunchTests.swift */,
 			);
 			path = LiveActivityPocUITests;
+			sourceTree = "<group>";
+		};
+		F8AADE792A4646C3005543C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8AADE892A4651FC005543C9 /* Protocols */,
+				F8AADE7F2A464A80005543C9 /* DataModel */,
+				F8AADE7A2A46471D005543C9 /* CollectionViewCells */,
+				F8AADE872A465058005543C9 /* HomeBaseViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8AADE7A2A46471D005543C9 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F8AADE7B2A4647A7005543C9 /* AlarmCVC.swift */,
+				F8AADE7C2A4647A7005543C9 /* AlarmCVC.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F8AADE7F2A464A80005543C9 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8AADE802A464A9C005543C9 /* HomeCollectionViewDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		F8AADE822A464DA4005543C9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F8AADE832A464DC0005543C9 /* UIColor+Extension.swift */,
+				F8AADE852A464E12005543C9 /* UIView+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F8AADE892A4651FC005543C9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F8AADE8A2A465210005543C9 /* HomeViewProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +300,7 @@
 			files = (
 				F8AADE782A46436A005543C9 /* .gitignore in Resources */,
 				F8AADE522A4641C9005543C9 /* LaunchScreen.storyboard in Resources */,
+				F8AADE7E2A4647A7005543C9 /* AlarmCVC.xib in Resources */,
 				F8AADE4F2A4641C9005543C9 /* Assets.xcassets in Resources */,
 				F8AADE4A2A4641C8005543C9 /* Main.storyboard in Resources */,
 			);
@@ -265,10 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AADE882A465058005543C9 /* HomeBaseViewModel.swift in Sources */,
+				F8AADE842A464DC0005543C9 /* UIColor+Extension.swift in Sources */,
 				F8AADE472A4641C8005543C9 /* ViewController.swift in Sources */,
+				F8AADE862A464E12005543C9 /* UIView+Extension.swift in Sources */,
+				F8AADE812A464A9C005543C9 /* HomeCollectionViewDataModel.swift in Sources */,
 				F8AADE432A4641C8005543C9 /* AppDelegate.swift in Sources */,
 				F8AADE452A4641C8005543C9 /* SceneDelegate.swift in Sources */,
 				F8AADE4D2A4641C8005543C9 /* LiveActivityPoc.xcdatamodeld in Sources */,
+				F8AADE7D2A4647A7005543C9 /* AlarmCVC.swift in Sources */,
+				F8AADE8B2A465210005543C9 /* HomeViewProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
